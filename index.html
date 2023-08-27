@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="brand logo" />
+        <div class="burger-menu">
+          <img
+            src="./images/burger_menu-4af87aba.svg"
+            alt="burger-icon"
+            class="burger-icon"
+          />
+        </div>
+        <ul class="nav-list">
+          <li>Мои шаги</li>
+          <li>График обучения</li>
+          <li>Что я получу?</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="main-hero">
+        <h2>
+          Получи работу программистом
+          <br />
+          <span>В IT компании</span>
+        </h2>
+        <p>
+          Makers быстро обучит с нуля, даст практический опыт
+          <br />
+          и будет с тобой до твоей первой зарплаты.
+        </p>
+        <button>Получи консультацию</button>
+      </div>
+    </section>
+    <hr />
+
+    <div class="cards-main">
+      <div class="title container">
+        <h3>Наши выпускники</h3>
+        <div class="title_btn">
+          <button id="btnCreate">Добавить карточку</button>
+          <a href="#">Все выпусники</a>
+        </div>
+      </div>
+      <div class="ccards container">
+        <a>
+          <div class="card-image">
+            <img
+              src="./images/photo_2023-07-12_11-44-02.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3>Каныкей Арстанбаева</h3>
+            <h3>Backend Developer/ DataScience</h3>
+          </div>
+        </a>
+
+        <a>
+          <div class="card-image">
+            <img
+              src="./images/photo_2023-07-12_11-43-49.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3>Тофик Гаджиев</h3>
+            <h3>Backend Developer</h3>
+          </div>
+        </a>
+
+        <a>
+          <div class="card-image">
+            <img
+              src="./images/photo_2023-07-12_11-43-21.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3>Мирбек Баратбаев</h3>
+            <h3>Frontend Developer</h3>
+          </div>
+        </a>
+
+        <a>
+          <div class="card-image">
+            <img
+              src="./images/photo_2023-07-12_11-44-22.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3>Богдан Бочкарев</h3>
+            <h3>Backend Developer</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="cards container">
+        
+      </div>
+      <div id="addCardsArea"></div>
+    </div>
+
+    <div class="main-modal">
+        <div class="inner-modal">
+          <h3>Добавить карточку студента</h3>
+          <button id="btnClose">Close</button>
+          <form class="form1">
+            <p>Ссылка на фото</p>
+            <input type="text" id="inpImage" placeholder="фото" />
+            <p>ФИО выпускника</p>
+            <input type="text" id="inpName" placeholder="имя" />
+            <p>Специализация</p>
+            <input type="text" id="inpProfession" placeholder="специальность" />
+            <button id="btnSave">Save</button>
+          </form>
+        </div>
+    </div>
+
+    <div class="main-modal2">
+        <div class="inner-modal2">
+          <h3>Измените карточку студента</h3>
+          <button id="btnClose2">Close</button>
+          <form class="form1">
+            <p>Ссылка на фото</p>
+            <input type="text" id="inpImage2" placeholder="фото" />
+            <p>ФИО выпускника</p>
+            <input type="text" id="inpName2" placeholder="имя" />
+            <p>Специализация</p>
+            <input type="text" id="inpProfession2" placeholder="специальность" />
+            <button id="btnSave2">Save</button>
+          </form>
+        </div>
+    </div>
+
+    <div class="partners container">
+      <h3>Наши партнёры</h3>
+      <div class="partners-list">
+        <img src="./images/google.svg" alt="1" />
+        <img src="./images/amazon.svg" alt="2" />
+        <img src="./images/airbnb.svg" alt="3" />
+        <img src="./images/facebook.svg" alt="4" />
+        <img src="./images/slack.svg" alt="5" />
+        <img src="./images/shopify.svg" alt="6" />
+        <img src="./images/airbnb2.svg" alt="7" />
+        <img src="./images/analytics.svg" alt="8" />
+        <img src="./images/zoom.svg" alt="9" />
+      </div>
+    </div>
+
+    <div class="info-block container">
+      <h3>
+        Узнай с чего начать карьеру в IT,<br />
+        о направлениях и профессиях
+      </h3>
+      <div class="info-block-entries">
+        <button id="btnOpen-all">Все IT профессии тут</button>
+        <div class="info-block-entries-img">
+          <img src="./images/laptop-icon.png" alt="frame" />
+        </div>
+      </div>
+    </div>
+
+    <div class="giv container">
+      <div class="giv_text">
+        <h3>Что ты получишь у нас:</h3>
+        <button id="btnAddText">Добавить текст</button>
+        <p>
+          <span>01</span>
+          <br />
+          Изучение программирования с нуля в 2 раза быстрее чем на других
+          курсах. Мы - самые выгодные среди всех курсов в Бишкеке!
+        </p>
+        <p>
+          <span>02</span>
+          <br />
+          Онлайн-стажировка после изучения. Стажировка была утверждена реальными
+          IT компаниями. Работа над проектами как в реальных IT компаниях.
+        </p>
+        <p>
+          <span>03</span>
+          <br />
+          Легкий доступ к компаниям.Твое портфолио увидят десятки компаний. Мы
+          тебя свяжем с компаниями и поможем обустроиться в работе.
+        </p>
+      </div>
+      <div id="addArea"></div>
+    </div>
+
+    <div class="text-modal">
+      <div class="inner-text-modal">
+        <h3>Добавьте блок с текстом</h3>
+        <button id="textModalClose">X</button>
+        <input type="text" id="inpHeading" placeholder="заголовок" />
+        <input type="text" id="inpText" placeholder="текст" />
+        <button id="textModalSave">Save</button>
+      </div>
+    </div>
+
+    <div class="text-modal2">
+        <div class="inner-text-modal2">
+          <h3>Отредактируйте блок с текстом</h3>
+          <button id="textModalClose2">X</button>
+          <input type="text" id="inpHeading2" placeholder="заголовок" />
+          <input type="text" id="inpText2" placeholder="текст" />
+          <button id="textModalSave2">Save</button>
+        </div>
+      </div>
+
+    <div class="programa container">
+        <div class="programa_text">
+          <h3 style="font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 125%;">Как мы из тебя сделаем программиста?</h3>
+          <p style="font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%;">У тебя будет личный менеджер на каждом из этих этапов.</p>
+          <button id="btnCreateCard">+</button>
+        </div>
+        <div class="pprograma_container">
+          <div class="programa_container_language">
+            <p>01</p>
+            <h4>Выберем направление</h4>
+            <p>
+              Определим направление, что изучать и построим путь с чего начать.
+            </p>
+          </div>
+          <div class="programa_container_language">
+            <p>02</p>
+            <h4>Изучим основы языка</h4>
+            <p>
+              Определим направление, что изучать и построим путь с чего начать.
+            </p>
+          </div>
+          <div class="programa_container_language">
+            <p>03</p>
+            <h4>Онлайн-стажировка</h4>
+            <p>
+              Обязательная практика на реальных проектах для выпускников после
+              bootcamp.
+            </p>
+          </div>
+          <div class="programa_container_language">
+            <p>04</p>
+            <h4>Трудоустройство</h4>
+            <p>
+              Твой менеджер лично будет продвигать тебя. Твое портфолио будет
+              доступно и виден десяткам компаний Кыргызстана и Казахстана.
+            </p>
+          </div>
+        </div>
+
+        <div class="programa_container"></div>
+      </div>
+
+
+      
+
+    <div class="main-modal3">
+        <div class="inner-modal3">
+          <h3>Добавить карточку</h3>
+          <button id="btnClose3">Close</button>
+          <form class="form1">
+            <p>Number</p>
+            <input type="text" id="inpImage3" placeholder="number" />
+            <p>Title</p>
+            <input type="text" id="inpName3" placeholder="title" />
+            <p>Description</p>
+            <input type="text" id="inpProfession3" placeholder="description" />
+            <button id="btnSave3">Save</button>
+          </form>
+        </div>
+    </div>
+
+    <div class="main-modal4">
+        <div class="inner-modal4">
+          <h3>Измените карточку</h3>
+          <button id="btnClose4">Close</button>
+          <form class="form1">
+            <p>Number</p>
+            <input type="text" id="inpImage4" placeholder="number" />
+            <p>Title</p>
+            <input type="text" id="inpName4" placeholder="title" />
+            <p>Description</p>
+            <input type="text" id="inpProfession4" placeholder="description" />
+            <button id="btnSave4">Save</button>
+          </form>
+        </div>
+    </div>
+
+      <div class="time container">
+        <div class="team">
+          <h4>Дневной формат</h4>
+          <img src="./images/line.svg" alt="" /> 
+          <ul>
+            <li><img src="./images/icon_aaa.svg" /> 8 часов в день</li>
+            <li><img src="./images/icon_aaa.svg" /> 5 дней в неделю</li>
+            <li><img src="./images/icon_aaa.svg" /> 40 часов в неделю</li>
+            <li><img src="./images/icon_aaa.svg" /> 10.00 - 18.00</li>
+            <li><img src="./images/icon_aaa.svg" /> Продолжительность - 4 месяца.</li>
+            <li><img src="./images/icon_aaa.svg" /> Онлайн стажировка</li>
+            <li><img src="./images/icon_aaa.svg" /> JavaScript / Python</li>
+          </ul>
+        </div>
+        <div class="team">
+          <h4>Вечерний формат</h4>
+          <img src="./images/line.svg" alt="" />
+          <ul>
+            <li><img src="./images/icon_aaa.svg" /> 3 часа в день</li>
+            <li><img src="./images/icon_aaa.svg" /> 5 дней в неделю</li>
+            <li><img src="./images/icon_aaa.svg" /> 15 часов в неделю</li>
+            <li><img src="./images/icon_aaa.svg" /> 18.30 - 21.30</li>
+            <li><img src="./images/icon_aaa.svg" /> Продолжительность - 4.5 месяца</li>
+            <li><img src="./images/icon_aaa.svg" /> Онлайн стажировка</li>
+            <li><img src="./images/icon_aaa.svg" /> JavaScript / Python</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="summary container">
+
+        <div class="results">
+            <h3>Доводим до результата</h3>
+            <p>Сейчас в Бишкеке более 35 IT курсов. Ежемесячно все они вместе выпускают более 1000 начинающих программистов. Почти все они в свободном плавании и сами ищут работу. Стажировку получают только лучшие. 
+                <br>
+                <br>
+            Выпускники Makers не сталкиваются с такой проблемой. Мы будем доводить всех выпускников до результата.</p>
+            <button>Записаться</button>
+        </div>
+
+        <div class="projects">
+            <h3>Проекты от наших партнеров</h3>
+            <div class="projects_container">
+
+                <div class="project_square blue">
+                    <div class="top_project_square">
+                        <img src="./images/pr_1_img1.svg" alt="f">
+                        <img src="./images/pr_1_img2.svg" alt="f">
+                    </div>
+                    <img src="./images/pr_1_1.svg" alt="" class="h5">
+                    <img src="./images/pr_1_2.svg" alt="">
+                </div>
+
+                <div class="project_square orange">
+                    <div class="top_project_square">
+                        <img src="./images/pr_2_img1.svg" alt="f">
+                        <img src="./images/pr_2_img2.svg" alt="f">
+                    </div>
+                    <img src="./images/pr_2_1.svg" alt="" class="h5">
+                    <img src="./images/pr_2_2.svg" alt="">
+                </div>
+
+                <div class="project_square green">
+                    <div class="top_project_square">
+                        <img src="./images/pr_3_img1.svg" alt="f">
+                        <img src="./images/pr_3_img2.svg" alt="f">
+                    </div>
+                    <img src="./images/pr_3_1.svg" alt="" class="h5">
+                    <img src="./images/pr_3_2.svg" alt="">
+                </div>
+
+                <div class="project_square blue">
+                    <div class="top_project_square">
+                        <img src="./images/pr_1_img1.svg" alt="f">
+                        <img src="./images/pr_1_img2.svg" alt="f">
+                    </div>
+                    <img src="./images/pr_4_1.svg" alt="" class="h5">
+                    <img src="./images/pr_4_2.svg" alt="">
+                </div>
+
+                <div class="project_square green">
+                    <div class="top_project_square">
+                        <img src="./images/pr_3_img1.svg" alt="f">
+                        <img src="./images/pr_3_img2.svg" alt="f">
+                    </div>
+                    <img src="./images/pr_5_1.svg" alt="" class="h5">
+                    <img src="./images/pr_5_2.svg" alt="">
+                </div>
+
+                <div class="project_square orange">
+                    <div class="top_project_square">
+                        <img src="./images/pr_2_img1.svg" alt="f">
+                        <img src="./images/pr_2_img2.svg" alt="f">
+                    </div>
+                    <img src="./images/pr_6_1.svg" alt="" class="h5">
+                    <img src="./images/pr_6_2.svg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+      <footer>
+        <div class="foot main_container">
+          <div class="foot_makers">
+            <img src="./images/logo_white.svg" alt="makers" />
+            <img src="./images/texttt.svg" alt="">
+          </div>
+          <div class="adres">
+            <p>
+              +996 704 409 409
+              <span style="margin-left: 24px">+996 704 409 409</span>
+            </p>
+            <p style="margin-top: 18px;">Табышалиева 29, Bishkek Kyrgyzstan</p>
+            <img src="./images/iconss.svg" alt="soz" />
+          </div>
+        </div>
+      </footer>
+
+      <div class="main-modal-all">
+        <div class="inner-modal-all">
+          <h3>Все об IT профессиях</h3>
+          <button id="btnClose-all">Close</button>
+        </div>
+        <div id="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam perferendis illo vero animi, totam commodi numquam tempore ducimus unde ut laborum officiis non maiores quisquam quaerat iure necessitatibus asperiores odio nesciunt, debitis neque id. Provident similique modi nam maiores nihil inventore quo odio alias consequatur laboriosam quidem nobis quibusdam facere, perferendis dignissimos rerum quos unde! Molestiae delectus quos quis consequuntur molestias itaque saepe magni qui atque, rerum, nobis asperiores dicta blanditiis maiores velit, provident enim culpa nulla natus. Nostrum nisi sequi ipsa adipisci distinctio repudiandae reprehenderit sunt, explicabo impedit, laborum pariatur, nemo molestiae quam maxime id deserunt vero tenetur totam!</div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
